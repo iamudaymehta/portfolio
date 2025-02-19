@@ -1,0 +1,26 @@
+# Node.js dependencies  
+node_modules/  
+npm-debug.log*  
+package-lock.json  
+pnpm-lock.yaml  
+
+# Build output  
+build/
+
+# TypeScript  
+*.tsbuildinfo  
+
+# Environment variables  
+.env  
+.env.local  
+.env.development.local  
+.env.test.local  
+.env.production.local  
+
+# Logs  
+logs/  
+*.log 
+
+# Editor-specific files  
+.vscode/  
+*.swp 
