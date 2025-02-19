@@ -1,0 +1,68 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Apply a modern font stack */
+body {
+  font-family: 'Inter', 'Poppins', 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #333; /* Dark text for contrast */
+  line-height: 1.6;
+}
+
+/* Style for code snippets */
+code {
+  font-family: 'Fira Code', 'Courier New', monospace;
+  background: #eee;
+  padding: 2px 5px;
+  border-radius: 4px;
+}
+
+/* Responsive container */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Link styling */
+a {
+  text-decoration: none;
+  color: #007bff;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #0056b3;
+}
+
+/* Global button style */
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Add basic responsiveness */
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
