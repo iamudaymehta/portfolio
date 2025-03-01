@@ -134,5 +134,91 @@ export const portfolioData: PortfolioData = {
       "Implemented robust CI/CD pipelines and deployment strategies",
       "Conducted technical interviews and mentored junior developers"
     ]
+  },
+
+  // Certifications Section
+  certifications: {
+    title: "Professional Certifications",
+    list: [
+      {
+        name: "JavaScript Security Specialization",
+        issuer: "Coursera"
+      },
+      {
+        name: "React.js Advanced Concepts",
+        issuer: "Udemy"
+      },
+      {
+        name: "Node.js Backend Development",
+        issuer: "DevTown"
+      }
+    ]
+  },
+
+  // Projects Section
+  projects: {
+    title: "Personal Projects",
+    projectsList: [
+      {
+        title: "E-Commerce Platform",
+        description: "Full-stack e-commerce application with payment integration",
+        technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+        githubLink: "https://github.com/yourusername/ecommerce-project",
+        liveLink: "https://your-ecommerce-project.com"
+      },
+      {
+        title: "Task Management App",
+        description: "Real-time task tracking application with user authentication",
+        technologies: ["Next.js", "Firebase", "Tailwind"],
+        githubLink: "https://github.com/yourusername/task-management",
+        liveLink: "https://your-task-app.com"
+      }
+    ]
+  },
+
+  // Contact Section
+  contact: {
+    title: "Get In Touch",
+    description: "I'm open to new opportunities and collaborations. Feel free to reach out!",
+    buttonText: "Say Hello"
+  },
+
+  // Social Links
+  socialLinks: [
+    {
+      name: "GitHub",
+      url: "https://github.com/iamudaymehta",
+      icon: "github"
+    },
+    {
+      name: "LinkedIn",
+      url: "https://linkedin.com/in/iamudaymehta",
+      icon: "linkedin"
+    },
+    {
+      name: "Twitter",
+      url: "https://twitter.com/um_iamudaymehta",
+      icon: "twitter"
+    },
+    {
+      name: "LeetCode",
+      url: "leetcode",
+      icon:"leetcode"
+    },
+    {
+      name: "LeetCode",
+      url: "leetcode",
+      icon:"leetcode"
+    }
+    
+  ],
+
+  // Theme Colors
+  theme: {
+    primaryColor: "#0a192f",
+    secondaryColor: "#64ffda",
+    textPrimary: "#ccd6f6",
+    textSecondary: "#8892b0",
+    backgroundColor: "#0a192f"
   }
 };
