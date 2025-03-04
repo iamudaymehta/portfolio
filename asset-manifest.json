@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/iamudaymehta/portfolio/static/css/main.62d5018e.css",
+    "main.js": "/iamudaymehta/portfolio/static/js/main.1fbc4d06.js",
+    "index.html": "/iamudaymehta/portfolio/index.html",
+    "main.62d5018e.css.map": "/iamudaymehta/portfolio/static/css/main.62d5018e.css.map",
+    "main.1fbc4d06.js.map": "/iamudaymehta/portfolio/static/js/main.1fbc4d06.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.62d5018e.css",
+    "static/js/main.1fbc4d06.js"
+  ]
+}
