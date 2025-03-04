@@ -1,0 +1,99 @@
+.experience {
+  padding: 100px 0;
+  background-color: #0a192f;
+}
+
+.experience-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.job-card {
+  background-color: #112240;
+  border-radius: 8px;
+  padding: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.job-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+}
+
+.job-title {
+  color: var(--text-primary);
+  font-size: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-company {
+  color: var(--secondary-color);
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.job-duration {
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.job-type {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.job-project {
+  margin-bottom: 1.5rem;
+}
+
+.project-name {
+  color: var(--text-primary);
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+.project-description {
+  color: var(--text-secondary);
+  margin-bottom: 1rem;
+}
+
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.tech-tag {
+  background-color: rgba(100, 255, 218, 0.1);
+  color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.8rem;
+}
+
+.job-responsibilities {
+  list-style-type: none;
+  padding: 0;
+}
+
+.job-responsibilities li {
+  color: var(--text-secondary);
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.job-responsibilities li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--secondary-color);
+}
