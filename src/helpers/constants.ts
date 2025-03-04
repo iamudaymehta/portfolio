@@ -33,27 +33,27 @@ export const portfolioData: PortfolioData = {
     categories: [
       {
         title: "Languages",
-        skills: ["C++", "HTML", "CSS", "JavaScript", "TypeScript", "SQL"]
+        skills: ["JavaScript", "TypeScript", "C", "C++", "HTML", "CSS", "SQL", "Python", "Java"]
       },
       {
         title: "Frameworks",
-        skills: ["Node.js", "React.js", "Next.js", "AngularJS", "Express.js"]
+        skills: ["React.js", "Next.js", "AngularJS", "Node.js", "Express.js"]
+      },
+      {
+        title: "Libraries",
+        skills: ["Redux", "Tailwind CSS", "Material-UI", "Chakra UI", "Bootstrap", "Three.js", "D3.js", "Mongoose"]
       },
       {
         title: "Database",
-        skills: ["MongoDB", "MySQL", "PostgreSQL"]
+        skills: ["MongoDB", "MySQL"]
       },
       {
         title: "DevOps & Tools",
-        skills: ["Git", "Docker", "Nginx", "AWS EC2", "Linux", "Jira", "GitHub", "Bitbucket"]
+        skills: ["Docker", "Docker Compose", "Nginx", "Git", "GitHub", "Bitbucket", "Amazon Web Services (AWS)"]
       },
       {
-        title: "Frontend Tools",
-        skills: ["Redux", "Context API", "Tailwind", "ChakraUI", "SCSS", "Styled Components"]
-      },
-      {
-        title: "Other Skills",
-        skills: ["REST APIs", "GraphQL", "Swagger", "ESLint", "Prettier", "Bash Scripting"]
+        title: "Other Tools",
+        skills: ["VS Code", "Chrome DevTools", "Postman", "Swagger", "JIRA", "Notion", "Slack"]
       }
     ]
   },
@@ -142,15 +142,18 @@ export const portfolioData: PortfolioData = {
     list: [
       {
         name: "JavaScript Security Specialization",
-        issuer: "Coursera"
+        issuer: "Coursera",
+        link: "https://www.coursera.org/account/accomplishments/specialization/DF62H0XVLIJ4"
       },
       {
-        name: "React.js Advanced Concepts",
-        issuer: "Udemy"
+        name: "Cloning Facebook using HTML and CSS",
+        issuer: "Udemy",
+        link: "https://tinyurl.com/FACEBOOK-CLone"
       },
       {
-        name: "Node.js Backend Development",
-        issuer: "DevTown"
+        name: "JavaScript and React",
+        issuer: "DevTown",
+        link: "https://tinyurl.com/JavascriptReact"
       }
     ]
   },
@@ -197,20 +200,14 @@ export const portfolioData: PortfolioData = {
     },
     {
       name: "Twitter",
-      url: "https://twitter.com/um_iamudaymehta",
+      url: "https://twitter.com/iamudaymehta",
       icon: "twitter"
     },
     {
       name: "LeetCode",
-      url: "leetcode",
-      icon:"leetcode"
-    },
-    {
-      name: "LeetCode",
-      url: "leetcode",
-      icon:"leetcode"
+      url: "https://leetcode.com/iamudaymehta/",
+      icon: "leetcode"
     }
-    
   ],
 
   // Theme Colors

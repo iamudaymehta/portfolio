@@ -59,6 +59,47 @@ interface Achievements {
   list: string[];
 }
 
+interface Certification {
+  name: string;
+  issuer: string;
+  link: string;
+}
+interface Certifications {
+  title: string;
+  list: Certification[];
+}
+
+interface ProjectItem {
+  title: string;
+  description: string;
+  technologies: string[];
+  githubLink: string;
+  liveLink: string;
+
+
+}
+interface Projects {
+  title: string;
+  projectsList: ProjectItem[]
+}
+interface Contact {
+  title: string;
+  description: string;
+  buttonText: string;
+}
+
+interface SocialLinks {
+  name: string;
+  url: string;
+  icon: string;
+}
+interface Theme {
+  primaryColor: string;
+  secondaryColor: string;
+  textPrimary: string;
+  textSecondary: string;
+  backgroundColor: string;
+}
 export interface PortfolioData {
   name: string;
   email: string;
@@ -68,4 +109,9 @@ export interface PortfolioData {
   experience: Experience;
   education: Education;
   achievements: Achievements;
+  certifications: Certifications;
+  projects: Projects;
+  contact: Contact;
+  socialLinks: SocialLinks[];
+  theme: Theme;
 }

@@ -1,0 +1,35 @@
+.achievements {
+  padding: 100px 0;
+  background-color: #0a192f;
+}
+
+.achievements-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  gap: 2rem;
+}
+
+.achievement-item {
+  background-color: #112240;
+  border-radius: 8px;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  transition: transform 0.3s ease;
+}
+
+.achievement-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.achievement-icon {
+  font-size: 2rem;
+  margin-right: 1rem;
+  color: var(--secondary-color);
+}
+
+.achievement-text {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
