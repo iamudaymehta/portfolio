@@ -24,7 +24,7 @@ export const portfolioData: PortfolioData = {
       "Problem Solver", 
       "Tech Enthusiast"
     ],
-    description: "Passionate Software Engineer with 2+ years of experience building dynamic and efficient web applications! Skilled in cutting-edge technologies like Node.js, React.js, MongoDB, Next.js, and MySQL, I thrive on solving challenging problems and creating impactful solutions."
+    description: "Innovative Software Developer with expertise in building scalable web apps using React.js, Node.js, and MongoDB. Experienced in optimizing APIs, resolving production issues, and leading development teams."
   },
 
   // Skills Section
@@ -33,7 +33,7 @@ export const portfolioData: PortfolioData = {
     categories: [
       {
         title: "Languages",
-        skills: ["JavaScript", "TypeScript", "C", "C++", "HTML", "CSS", "SQL", "Python", "Java"]
+        skills: ["JavaScript", "TypeScript", "HTML", "CSS", "SQL"]
       },
       {
         title: "Frameworks",
@@ -49,7 +49,7 @@ export const portfolioData: PortfolioData = {
       },
       {
         title: "DevOps & Tools",
-        skills: ["Docker", "Docker Compose", "Nginx", "Git", "GitHub", "Bitbucket", "Amazon Web Services (AWS)"]
+        skills: ["Docker", "Docker Compose", "Nginx", "Git", "GitHub", "Bitbucket"]
       },
       {
         title: "Other Tools",
@@ -140,6 +140,11 @@ export const portfolioData: PortfolioData = {
   certifications: {
     title: "Professional Certifications",
     list: [
+      {
+        name: "HTML, CSS, and Javascript for Web Developers Specialization",
+        issuer: "Coursera",
+        link: "https://coursera.org/share/538f6d2f7ae5e41e685863ec9f9ebb81"
+      },
       {
         name: "JavaScript Security Specialization",
         issuer: "Coursera",
