@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import '../styles/HeroSection.css';
 import { portfolioData } from '../helpers/constants';
 import TypeWriter from './TypeWriter';
+import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa';
+import { SiLeetcode } from 'react-icons/si';
 
 const HeroSection: React.FC = () => {
   const { hero } = portfolioData;
@@ -45,32 +47,59 @@ const HeroSection: React.FC = () => {
               />
               </h2>
           <p className="hero-description">{hero.description}</p>
-          
-          {/* Social Links */}
-          <div className="hero-social-links">
-            {portfolioData.socialLinks.map((social, index) => (
-              <a 
-                key={index} 
-                href={social.url} 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="social-link"
-              >
-                {social.icon === 'github' && '🐱'}
-                {social.icon === 'linkedin' && '💼'}
-                {social.icon === 'twitter' && '🐦'}
-              </a>
-            ))}
-          </div>
+          <div className={`social-links ${portfolioData.socialLinks.length <= 3 ? 'few-links' : ''}`}>
+                          {portfolioData.socialLinks.map((social, index) => {
+                            let icon;
+                            let iconColor;
+                            switch(social.icon) {
+                              case 'github':
+                                icon = <FaGithub size={24} />;
+                                iconColor = '#ffffff';
+                                break;
+                              case 'linkedin':
+                                icon = <FaLinkedin size={24} />;
+                                iconColor = '#0077B5';
+                                break;
+                              case 'twitter':
+                                icon = <FaTwitter size={24} />;
+                                iconColor = '#1DA1F2';
+                                break;
+                              case 'leetcode':
+                                icon = <SiLeetcode size={24} />;
+                                iconColor = '#FFA116';
+                                break;
+                              default:
+                                icon = social.name;
+                                iconColor = 'var(--text-primary)';
+                            }
+                            
+                            return (
+                              <a 
+                                key={index} 
+                                href={social.url} 
+                                target="_blank" 
+                                rel="noopener noreferrer"
+                                className={`social-icon ${portfolioData.socialLinks.length <= 3 ? 'large-icon' : ''}`}
+                                aria-label={`${social.name} profile`}
+                                title={social.name}
+                                style={{ 
+                                  color: iconColor,
+                                  borderColor: iconColor
+                                }}
+                              >
+                                {icon}
+                              </a>
+                            );
+                          })}
+                        </div>
 
-          {/* CTA Buttons */}
           <div className="hero-cta">
             <a href="#contact" className="btn btn-primary">Contact Me</a>
             <a 
-              href="https://drive.google.com/file/d/1euYdSdCjIN77G6xGVRgnIZMlzs2NH0MT/view?usp=sharing" 
+              href="https://drive.google.com/file/d/1BMLHWfPQUF2uLrOtd1M0j68As2JEcmc1/view?usp=sharing" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="btn btn-secondary"
+              className="btn btn-primary"
             >
               Download CV
             </a>
